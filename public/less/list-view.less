@@ -1,0 +1,54 @@
+.list-view-checkbox {
+  float: right;
+}
+
+.list-view-label {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+  float: right;
+  margin-bottom: 30px;
+  padding-left: 5px;
+  margin-right: 15px;
+}
+.task-list {
+  clear: both;
+}
+
+.list-view-checkbox:checked + .task-list .task-card:not(.add-task) {
+  width: 100%;
+  margin-bottom: 10px;
+
+  p.h3 {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 40%;
+    font-size: 18px;
+  }
+
+  p.h5 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-bottom: 0;
+    width: 10%
+  }
+
+  .task-stats {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .task-card-link {
+    min-height: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+}

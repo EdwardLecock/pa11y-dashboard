@@ -15,7 +15,10 @@ You should have received a copy of the GNU General Public License
 along with Pa11y Dashboard.  If not, see <http://www.gnu.org/licenses/>.
 }}
 
-<ul id="taskList" class="list-unstyled clearfix crunch-bottom">
+<label for="trigger-list-view" class="form-check-label list-view-label">Trigger List View</label>
+<input id="trigger-list-view" class="form-check-input list-view-checkbox clearfix" type="checkbox" />
+
+<ul class="list-unstyled clearfix crunch-bottom task-list">
 
 	{{#unless readonly}}
 	        <li class="col-sm-6 task-card add-task">
