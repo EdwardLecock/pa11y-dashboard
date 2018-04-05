@@ -47,18 +47,23 @@ Add a new batch of URLs
 	<div class="form-group clearfix">
 		<div class="row">
 			<div class="col-md-8 col-sm-8 col-xs-10">
-				<label class="control-label" for="new-group-data">JSON containing the list of URLs, z.B.:<p>
-					[
-					{
-					"name": "test",
-					"url": "https://www.google.de"
-					},
-					{
-					"name": "test2",
-					"url": "https://www.google.be"
-					}
-					]</p></label>
-				<textarea class="form-control" id="new-group-data" name="list" required aria-describedby="action-detail" placeholder="must be a valid JSON">{{task.list}}</textarea>
+				<label class="control-label" for="new-group-data">JSON containing the list of URLs, e.g.:
+					<pre>
+						<code>
+[
+	{
+		"name": "test",
+		"url": "https://www.google.de"
+	},
+	{
+		"name": "test2",
+		"url": "https://www.google.be"
+	}
+]
+						</code>
+					</pre>
+				</label>
+				<textarea class="form-control" id="new-group-data" name="list" required aria-describedby="action-detail" placeholder="must be a valid JSON" rows="16">{{task.list}}</textarea>
 			</div>
 		</div>
 	</div>
